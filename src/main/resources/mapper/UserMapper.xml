@@ -3,7 +3,7 @@
 <mapper namespace="com.lcomputerstudy1.example.mapper.UserMapper">
 
 <!-- 권한읽기 -->
-	<select id="readAythorities" parameterType="String" resultType="org.springframework.security.core.authority.SimpleGrantedAuthority">
+	<select id="readAuthorities" parameterType="String" resultType="org.springframework.security.core.authority.SimpleGrantedAuthority">
 		SELECT		u_auth
 		FROM		lc_auth
 		WHERE		1=1
